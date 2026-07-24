@@ -144,12 +144,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .nav-links a:hover::after,.nav-links a[aria-current="page"]::after{ transform:scaleX(1); }
 .nav-right{ display:flex; align-items:center; gap:28px; }
 
-.nav-toggle{ display:none; background:none; border:none; padding:4px; color:inherit; }
-.nav-toggle svg{ width:22px; height:22px; }
+.nav-toggle{ display:none; background:none; border:none; padding:4px; color:inherit; position:relative; z-index:75; }
+.nav-toggle svg{ width:22px; height:22px; overflow:visible; }
+.nav-toggle .bar{ transition:transform .35s var(--ease), opacity .25s var(--ease); transform-origin:center; }
+.nav-toggle[aria-expanded="true"]{ color:var(--ivory); }
+.nav-toggle[aria-expanded="true"] .bar-top{ transform:translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .bar-mid{ opacity:0; }
+.nav-toggle[aria-expanded="true"] .bar-bottom{ transform:translateY(-6px) rotate(-45deg); }
 
 @media (max-width: 880px){
   .nav-links{
-    position:fixed; inset:0; top:0;
+    position:fixed; inset:0; top:0; z-index:70;
     background:var(--espresso); color:var(--ivory);
     flex-direction:column; justify-content:center; align-items:flex-start;
     gap:22px; padding:100px var(--gutter) 60px;
