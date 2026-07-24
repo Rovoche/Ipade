@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · IPADÉ</title>
+<meta name="description" content="Tell IPADÉ what you're gathering for. Share the shape of your event and we'll follow up with next steps.">
+<meta property="og:title" content="Contact · IPADÉ">
+<meta property="og:image" content="https://images.pexels.com/photos/4717550/pexels-photo-4717550.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav no-hero" aria-label="Primary">
+  <a href="index.html" class="brand" aria-label="IPADÉ home">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" width="26" height="26"><circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.6" stroke-dasharray="86 21" stroke-linecap="round" transform="rotate(-38 24 24)"/><circle cx="24" cy="16.6" r="3.3" fill="currentColor"/></svg></span>
+    <span class="brand-word">IPADÉ</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#studio">Studio</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" aria-current="page">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="contact.html" class="btn btn-light nav-cta-desktop" style="padding:11px 20px;font-size:12px;">Plan an Event</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-hero" style="height:46vh;min-height:320px;">
+    <img src="https://images.pexels.com/photos/4717550/pexels-photo-4717550.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Guests gathered together in an elegant event hall">
+    <div class="wrap page-hero-content">
+      <p class="eyebrow">Contact</p>
+      <h1 style="font-size:clamp(32px,4.6vw,54px);">Tell us what you're gathering for.</h1>
+    </div>
+  </header>
+
+  <section class="section-pad">
+    <div class="wrap" style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:60px;">
+      <div class="reveal">
+        <p class="lede">Share the shape of your event and we'll follow up within two business days. We take on a limited number of events each season, so early outreach helps, especially for a date in wedding season.</p>
+        <div style="margin-top:44px;">
+          <p class="eyebrow">Email</p>
+          <a href="mailto:studio@ipade.ng" class="text-link" style="display:inline-block;margin-top:8px;font-size:15px;">studio@ipade.ng</a>
+        </div>
+        <div style="margin-top:28px;">
+          <p class="eyebrow">Studio</p>
+          <p style="margin-top:8px;font-size:15px;color:var(--espresso-soft);">Lagos, Nigeria</p>
+        </div>
+        <div style="margin-top:28px;">
+          <p class="eyebrow">Instagram</p>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="text-link" style="display:inline-block;margin-top:8px;font-size:15px;">@ipade.ng</a>
+        </div>
+      </div>
+
+      <form class="reveal inquiry-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="event-type">Event Type</label>
+            <select id="event-type" name="event-type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Wedding</option>
+              <option>Traditional Ceremony</option>
+              <option>Private Celebration</option>
+              <option>Corporate Event</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="field">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="City, venue if known">
+          </div>
+          <div class="field">
+            <label for="guests">Estimated Guest Count</label>
+            <input type="number" id="guests" name="guests" min="1" placeholder="e.g. 150">
+          </div>
+          <div class="field">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select a range</option>
+              <option>Under ₦5,000,000</option>
+              <option>₦5,000,000 – ₦15,000,000</option>
+              <option>₦15,000,000 – ₦40,000,000</option>
+              <option>₦40,000,000+</option>
+              <option>Prefer to discuss</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="occasion">Tell Us About the Occasion</label>
+            <textarea id="occasion" name="occasion" placeholder="What's the event, and what matters most to you about it?"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Inquiry</button>
+        <p class="form-note" style="margin-top:18px;font-size:13.5px;color:var(--espresso-soft);opacity:0;transition:opacity .4s ease;"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" style="color:var(--bronze);" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" width="24" height="24"><circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.6" stroke-dasharray="86 21" stroke-linecap="round" transform="rotate(-38 24 24)"/><circle cx="24" cy="16.6" r="3.3" fill="currentColor"/></svg></span>
+          <span class="brand-word">IPADÉ</span>
+        </div>
+        <p class="footer-tag">Event planning and experience design.<br>Lagos, Nigeria.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <a href="index.html#studio">Studio</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:studio@ipade.ng">studio@ipade.ng</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram: @ipade.ng</a>
+        <p>Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 IPADÉ. All rights reserved.</span>
+      <span>Event Planning &amp; Experience Design</span>
+    </div>
+  </div>
+  <div class="rvc-signoff">
+    <div class="wrap rvc-signoff-inner">
+      <p class="rvc-line">Built on Rock. Crafted to Last.</p>
+      <p class="rvc-by">— <a href="https://www.rovoche.com/" target="_blank" rel="noopener">ROVOCHÉ</a></p>
+      <p class="rvc-sub">Demo Experience for IPADÉ</p>
+    </div>
+  </div>
+</footer>
+
+<div class="rvc-pill" role="note" aria-label="ROVOCHÉ demo attribution">
+  <span class="dot" aria-hidden="true"></span>
+  <span>Concept by <a href="https://www.rovoche.com/" target="_blank" rel="noopener">ROVOCHÉ</a></span>
+  <button class="close" aria-label="Dismiss">×</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
