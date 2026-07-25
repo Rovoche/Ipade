@@ -165,6 +165,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media (max-width: 880px){
   .nav-links{
     position:fixed; inset:0; top:0; z-index:70;
+    height:100vh; height:100dvh; overflow-y:auto;
     background:var(--espresso); color:var(--ivory);
     flex-direction:column; justify-content:center; align-items:flex-start;
     gap:22px; padding:100px var(--gutter) 60px;
